@@ -1,3 +1,42 @@
 img {
   width: 100%;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+  height: 100vh;
+  padding: 0 0.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(244, 38%, 16%);
+  margin-bottom: 1em;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0;
+}
+article {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.rounder-bottom {
+  border-radius: 0 0 10px 10px;
+}
+
+.rounder-top {
+  border-radius: 10px 10px 0 0;
+}
