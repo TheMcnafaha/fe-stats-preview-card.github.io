@@ -76,3 +76,16 @@ p {
   justify-content: center;
   align-items: center;
 }
+.canvas {
+  background: hsl(277, 64%, 61%);
+}
+.canvas img {
+  display: block;
+  width: 100%;
+  opacity: 0.6;
+}
+@media (min-width: 1080px) {
+  body {
+    background-color: red;
+  }
+}
