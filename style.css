@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
 img {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 * {
   box-sizing: border-box;
@@ -32,6 +33,7 @@ li {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 ul {
   display: flex;
   flex-direction: column;
@@ -70,6 +72,12 @@ p {
 .purple {
   color: hsl(277, 64%, 61%);
 }
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .flex-center {
   display: flex;
   flex-direction: column;
@@ -86,6 +94,48 @@ p {
 }
 @media (min-width: 1080px) {
   body {
-    background-color: red;
+    background-color: purple;
+  }
+  .container {
+    max-width: 900px;
+  }
+  .main-flex {
+    display: grid;
+    grid-template: auto/ 1fr 1fr;
+    max-height: 800px;
+  }
+  ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  img {
+    height: 100%;
+    border-radius: 0;
+  }
+  .canvas {
+    border-radius: 0;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .corner {
+    border-radius: 0 10px 10px 0;
+  }
+
+  article {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    text-align: left;
+  }
+
+  .texts {
+    max-width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
