@@ -18,7 +18,7 @@ body {
 
 h2 {
   line-height: 2.5rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 .container {
   background-color: hsl(244, 38%, 16%);
@@ -41,7 +41,7 @@ ul {
   padding: 0;
 }
 article {
-  padding: 2rem;
+  padding: 0.6rem 2rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -69,8 +69,12 @@ p {
   letter-spacing: 0.05rem;
   color: hsla(0, 0%, 100%, 0.6);
 }
+
 .purple {
   color: hsl(277, 64%, 61%);
+}
+.large-text {
+  font-size: 1.65rem;
 }
 .main-flex {
   display: flex;
@@ -93,11 +97,8 @@ p {
   opacity: 0.6;
 }
 @media (min-width: 1080px) {
-  body {
-    background-color: purple;
-  }
   .container {
-    max-width: 900px;
+    max-width: 999px;
   }
   .main-flex {
     display: grid;
@@ -130,6 +131,7 @@ p {
     align-items: center;
     gap: 5rem;
     text-align: left;
+    padding: 2rem;
   }
 
   .texts {
